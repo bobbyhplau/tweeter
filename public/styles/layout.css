@@ -24,6 +24,13 @@ body {
     background-color: #eee;
 }
 
+main {
+    padding: 80px 0px 0px 0px;
+    width: 450px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
