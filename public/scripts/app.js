@@ -46,10 +46,10 @@ $(document).ready(function() {
         let $section = $("<section>").append($message);
 
         let $date = $("<p>").addClass("date").text(date);
-        let $imgFlag = $('<img>').addClass('icon').attr('src', 'images/flag.png');
-        let $imgRetweet = $('<img>').addClass('icon').attr('src', 'images/retweet.png');
-        let $imgHeart = $('<img>').addClass('icon').attr('src', 'images/heart.png');
-        let $iconbar = $('<span>').addClass('iconbar').append($imgFlag).append($imgRetweet).append($imgHeart);
+        let $flag = $('<i>').addClass('fas fa-flag');
+        let $retweet = $('<i>').addClass('fas fa-retweet');
+        let $heart = $('<i>').addClass('fas fa-heart');
+        let $iconbar = $('<span>').addClass('iconbar').append($flag).append($retweet).append($heart);
         let $footer = $("<footer>").append($date).append($iconbar);
 
 
@@ -76,17 +76,20 @@ $(document).ready(function() {
     $('#submitbutton').on('click', function(event) {
         event.preventDefault();
 
-        if (($('textarea').val().length > 0) &&
-            ($('textarea').val().length <= 140) &&
-            ($('textarea').val() !== null)) {
+        const textarea = $('textarea');
+
+        if ((textarea.val().length > 0) &&
+            (textarea.val().length <= 140) &&
+            (textarea.val() !== null)) {
 
             $.ajax({
                     type: 'POST',
                     url: '/tweets',
-                    data: $('textarea').serialize()
+                    data: textarea.serialize()
                 })
                 .then(function() {
-                    $('textarea').val('');
+                    textarea.val('');
+                    $('.counter').text(140);
                     loadTweets();
                 });
         } else {

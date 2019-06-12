@@ -1,6 +1,6 @@
 .tweet {
     background-color: #ffffff;
-    margin: 0em 2em 1em 2em;
+    margin: 1em 2em 1em 2em;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
@@ -79,6 +79,11 @@
 .iconbar {
     text-align: right;
     opacity: 0;
+    color: #60C7B8;
+}
+
+.iconbar i {
+    margin: 0px 5px 0px 5px;
 }
 
 .tweet:hover header {
