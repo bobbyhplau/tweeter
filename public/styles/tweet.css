@@ -10,12 +10,14 @@
 
 .tweet header {
     background-color: #F3F3F3;
-    height: 66px;
+    /* clearfix hack */
+    overflow: auto;
 }
 
 .tweet section {
     height: 90px;
     background-color: #FFFFFF;
+    display: table;
 }
 
 .tweet footer {
@@ -34,24 +36,28 @@
 }
 
 .tweet h2 {
-    float: left;
     color: #677C81;
+    float: left;
 }
 
 .tweet .message {
     margin: 0 0 0 0;
-    line-height: 45px;
+    padding: 0 1em 0 1em;
+}
+
+/* Vertical Align Hack */
+.tweet span {
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .tweet .username {
-    float: right;
     margin-right: 1em;
     color: #9FA09D;
-    line-height: 33px;
+    float: right;
 }
 
 .tweet .date {
-    float: left;
     padding: 0em 0em 0em 1ex;
     margin: 0em 0em 0em 0em;
     font-size: 14px;
