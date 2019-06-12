@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <!-- New Tweet Form CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <!-- Tweet CSS -->
+    <link rel='stylesheet' href='/styles/tweet.css' type='text/css' />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
     <!-- App JS -->
@@ -39,8 +41,22 @@
             </form>
         </section>
         <section id='old-tweets'>
-            Hello Section
+            <article class='tweet'>
+                <header>
+                    <img class='displaypic' src='temp_dps/dp1.webp'>
+                    <h2>Test User</h2>
+                    <p class='username'>@testuser</p>
+                </header>
+                <section>
+                    <p class='message'>This is a tweet.</p>
+                </section>
+                <footer>
+                    <p class='date'>10 days ago</p>
+                </footer>
+            </article>
         </section>
+        <!-- Temporary line break -->
+        <br>
     </main>
 </body>
 

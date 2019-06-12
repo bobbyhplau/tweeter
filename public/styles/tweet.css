@@ -1,0 +1,58 @@
+.tweet {
+    background-color: #eeeeee;
+    margin: 0em 2em 1em 2em;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D0D0D0;
+    overflow: hidden;
+}
+
+.tweet header {
+    background-color: #F3F3F3;
+    height: 66px;
+}
+
+.tweet section {
+    height: 90px;
+    background-color: #FFFFFF;
+}
+
+.tweet footer {
+    border-top: 1px solid #EFEFEF;
+    height: 30px;
+    background-color: #FFFFFF;
+    padding: 4px;
+}
+
+.tweet .displaypic {
+    height: 50px;
+    width: 50px;
+    margin: 8px 8px 8px 8px;
+    border-radius: 10px;
+    float: left;
+}
+
+.tweet h2 {
+    float: left;
+    color: #677C81;
+}
+
+.tweet .message {
+    margin: 0 0 0 0;
+    line-height: 45px;
+}
+
+.tweet .username {
+    float: right;
+    margin-right: 1em;
+    color: #9FA09D;
+    line-height: 33px;
+}
+
+.tweet .date {
+    float: left;
+    padding: 0em 0em 0em 1ex;
+    margin: 0em 0em 0em 0em;
+    font-size: 14px;
+}

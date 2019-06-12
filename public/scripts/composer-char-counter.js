@@ -1,13 +1,14 @@
 $(document).ready(function() {
     $('textarea').on('input', function() {
-        let counter = 140 - $(this).val().length;
+        const counter = $('.counter');
+        let count = 140 - $(this).val().length;
 
-        $('.counter').text(counter);
+        counter.text(count);
 
-        if ($('.counter').text() >= 0) {
-            $('.counter').css('color', 'inherit');
+        if (count >= 0) {
+            counter.css('color', "");
         } else {
-            $('.counter').css('color', 'red');
+            counter.css('color', 'red');
         }
     });
 });
