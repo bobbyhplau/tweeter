@@ -13,37 +13,20 @@ $(document).ready(function() {
         if (elapsed < msPerMinute) {
             return Math.round(elapsed / 1000) + ' seconds ago';
         }
-
         if (elapsed < msPerHour) {
             return Math.round(elapsed / msPerMinute) + ' minutes ago';
         }
-
         if (elapsed < msPerDay) {
             return Math.round(elapsed / msPerHour) + ' hours ago';
         }
-
         if (elapsed < msPerMonth) {
             return 'aproximately ' + Math.round(elapsed / msPerDay) + ' days ago';
         }
-
         if (elapsed < msPerYear) {
             return 'aproximately ' + Math.round(elapsed / msPerMonth) + ' months ago';
         }
-
         return 'aproximately ' + Math.round(elapsed / msPerYear) + ' years ago';
     }
-
-    const loadTweets = function() {
-        $.ajax({
-            method: 'GET',
-            url: '/tweets',
-            dataType: 'json'
-        }).then(function(result) {
-            return renderTweets(result);
-        });
-    }
-
-    loadTweets();
 
     const createTweetElement = function(tweetObj) {
         let realname = tweetObj.user.name;
@@ -79,4 +62,37 @@ $(document).ready(function() {
             $('#tweets-container').prepend(createTweetElement(tweet));
         }
     }
+
+    const loadTweets = function() {
+        $.ajax({
+            method: 'GET',
+            url: '/tweets',
+            dataType: 'json'
+        }).then(function(result) {
+            return renderTweets(result);
+        });
+    }
+
+    $('#submitbutton').on('click', function(event) {
+        event.preventDefault();
+
+        if (($('textarea').val().length > 0) &&
+            ($('textarea').val().length <= 140) &&
+            ($('textarea').val() !== null)) {
+
+            $.ajax({
+                    type: 'POST',
+                    url: '/tweets',
+                    data: $('textarea').serialize()
+                })
+                .then(function() {
+                    $('textarea').val('');
+                    loadTweets();
+                });
+        } else {
+            alert("Your tweet must be between 1 to 140 character long!");
+        }
+    });
+
+    loadTweets();
 });
