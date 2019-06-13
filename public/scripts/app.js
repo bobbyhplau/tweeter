@@ -77,10 +77,14 @@ $(document).ready(function() {
         event.preventDefault();
 
         const textarea = $('textarea');
+        const error = $('.error');
+        const text = textarea.val().trim();
 
-        if ((textarea.val().length > 0) &&
-            (textarea.val().length <= 140) &&
-            (textarea.val() !== null)) {
+        if ((text.length > 0) &&
+            (text.length <= 140) &&
+            (text !== null)) {
+
+            textarea.val(text);
 
             $.ajax({
                     type: 'POST',
@@ -92,8 +96,9 @@ $(document).ready(function() {
                     $('.counter').text(140);
                     loadTweets();
                 });
+            error.slideUp('fast');
         } else {
-            alert("Your tweet must be between 1 to 140 character long!");
+            error.slideDown('fast');
         }
     });
 

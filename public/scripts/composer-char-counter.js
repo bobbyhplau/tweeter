@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('textarea').on('input', function() {
         const counter = $('.counter');
-        let count = 140 - $(this).val().length;
+        let count = 140 - $(this).val().trim().length;
 
         counter.text(count);
 
