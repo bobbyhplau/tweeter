@@ -4,6 +4,7 @@ $gray: #D0D0D0;
 $softgray: #EFEFEF;
 $teal: #60c7b8;
 $darkgray: #656565;
+$lightred: #FA7985;
 
 .tweet {
     background-color: $white;
@@ -42,7 +43,6 @@ $darkgray: #656565;
         float: left;
     }
 
-
     h2 {
         float: left;
     }
@@ -71,12 +71,6 @@ $darkgray: #656565;
         font-size: 14px;
     }
 
-    .icon {
-        height: 15px;
-        width: 15px;
-        margin: 0px 2px;
-    }
-
     .iconbar {
         text-align: right;
         opacity: 0;
@@ -84,6 +78,10 @@ $darkgray: #656565;
 
         i {
             margin: 0px 5px;
+        }
+
+        i:hover {
+            color: $lightred;
         }
     }
 }

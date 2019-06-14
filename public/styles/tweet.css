@@ -54,11 +54,6 @@
   margin: 0px 0px;
   font-size: 14px;
 }
-.tweet .icon {
-  height: 15px;
-  width: 15px;
-  margin: 0px 2px;
-}
 .tweet .iconbar {
   text-align: right;
   opacity: 0;
@@ -66,6 +61,9 @@
 }
 .tweet .iconbar i {
   margin: 0px 5px;
+}
+.tweet .iconbar i:hover {
+  color: #FA7985;
 }
 
 .tweet:hover {
