@@ -1,0 +1,40 @@
+$offwhite: #EEEEEE;
+$offblack: #D0D0D0;
+$errorred: #CC0000;
+
+.new-tweet {
+    background-color: $offwhite;
+    padding: 1em 1em 1em 1em;
+    margin: 0em 2em 1em 2em;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $offblack;
+    display: none;
+
+
+    .counter {
+        float: right;
+        font-style: italic;
+        font-size: 90%;
+        padding: 4px 8px 0em 0em;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100%;
+        padding: 5px 5px 0px 5px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        margin: 0em 0em 1em 0em;
+    }
+
+    .error {
+        margin: 0 0 5px 0;
+        font-size: 75%;
+        color: $errorred;
+        display: none;
+    }
+}

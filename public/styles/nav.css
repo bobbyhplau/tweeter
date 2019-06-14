@@ -1,46 +1,42 @@
 #nav-bar {
-    background-color: #00a087;
-    color: #e8fdff;
-    position: fixed;
-    height: 80px;
-    width: 100%;
-    padding: 0em 3em;
-    z-index: 1;
+  background-color: #00a087;
+  color: #e8fdff;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  padding: 0em 3em;
+  z-index: 1;
 }
-
 #nav-bar .logo {
-    height: 80px;
-    width: 80px;
-    float: left;
+  height: 80px;
+  width: 80px;
+  float: left;
 }
-
 #nav-bar .header {
-    float: left;
-    font-size: 200%;
-    line-height: 80px;
-    padding: 0px 0px 0px 10px;
+  float: left;
+  font-size: 200%;
+  line-height: 80px;
+  padding: 0px 0px 0px 10px;
 }
-
 #nav-bar .compose {
-    float: right;
-    height: 60px;
-    width: 125px;
-    padding: 0;
-    margin: 10px 0;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #021711;
-    font-size: 19px;
-    color: #2C9B88;
-    background-color: #E7FDFF;
+  float: right;
+  height: 60px;
+  width: 125px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #021711;
+  font-size: 19px;
+  color: #2C9B88;
+  background-color: #E7FDFF;
 }
-
 #nav-bar .compose i {
-    margin: 2px;
+  margin: 2px;
+}
+#nav-bar .compose:hover {
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
-#nav-bar .compose:hover {
-    color: #000000;
-    background-color: #FFFFFF;
-}
+/*# sourceMappingURL=nav.css.map */

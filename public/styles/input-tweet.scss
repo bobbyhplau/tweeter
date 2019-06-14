@@ -1,0 +1,106 @@
+$white: #ffffff;
+$offwhite: #EEEEEE;
+$gray: #D0D0D0;
+$softgray: #EFEFEF;
+$teal: #60c7b8;
+$darkgray: #656565;
+
+.tweet {
+    background-color: $white;
+    margin: 16px 32px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $gray;
+    overflow: hidden;
+
+    header {
+        background-color: $offwhite;
+        opacity: 0.6;
+        /* clearfix hack */
+        overflow: auto;
+    }
+
+    section {
+        height: 90px;
+        display: table;
+    }
+
+    footer {
+        border-top: 1px solid $softgray;
+        height: 30px;
+        padding: 4px;
+        display: table;
+        width: 100%;
+    }
+
+    .displaypic {
+        height: 50px;
+        width: 50px;
+        margin: 8px;
+        border-radius: 10px;
+        float: left;
+    }
+
+
+    h2 {
+        float: left;
+    }
+
+    .message {
+        padding: 0 16px;
+        word-wrap: break-word;
+        width: (500px - 32px - 32px - 2px - 2px);
+    }
+
+    /* Vertical Align Hack */
+    span {
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .username {
+        margin-right: 1em;
+        float: right;
+        line-height: 33px;
+    }
+
+    .date {
+        padding-left: 1ex;
+        margin: 0px 0px;
+        font-size: 14px;
+    }
+
+    .icon {
+        height: 15px;
+        width: 15px;
+        margin: 0px 2px;
+    }
+
+    .iconbar {
+        text-align: right;
+        opacity: 0;
+        color: $teal;
+
+        i {
+            margin: 0px 5px;
+        }
+    }
+}
+
+.tweet:hover {
+    border-color: $darkgray;
+
+    .displaypic {
+        opacity: 1;
+    }
+
+    header {
+        background-color: $offwhite;
+        opacity: 1;
+    }
+
+    .iconbar {
+        opacity: 1;
+    }
+}

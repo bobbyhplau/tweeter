@@ -1,100 +1,85 @@
 .tweet {
-    background-color: #ffffff;
-    margin: 1em 2em 1em 2em;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #D0D0D0;
-    overflow: hidden;
+  background-color: #ffffff;
+  margin: 16px 32px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #D0D0D0;
+  overflow: hidden;
+  /* Vertical Align Hack */
 }
-
 .tweet header {
-    background-color: #EEEEEE;
-    opacity: 0.6;
-    color: #234651;
-    /* clearfix hack */
-    overflow: auto;
+  background-color: #EEEEEE;
+  opacity: 0.6;
+  /* clearfix hack */
+  overflow: auto;
 }
-
 .tweet section {
-    height: 90px;
-    background-color: #FFFFFF;
-    display: table;
+  height: 90px;
+  display: table;
 }
-
 .tweet footer {
-    border-top: 1px solid #EFEFEF;
-    height: 30px;
-    background-color: #FFFFFF;
-    padding: 4px;
-    display: table;
-    width: 100%;
+  border-top: 1px solid #EFEFEF;
+  height: 30px;
+  padding: 4px;
+  display: table;
+  width: 100%;
 }
-
 .tweet .displaypic {
-    height: 50px;
-    width: 50px;
-    margin: 8px 8px 8px 8px;
-    border-radius: 10px;
-    float: left;
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+  border-radius: 10px;
+  float: left;
 }
-
-.tweet:hover .displaypic {
-    opacity: 1;
-}
-
 .tweet h2 {
-    float: left;
+  float: left;
 }
-
 .tweet .message {
-    margin: 0 0 0 0;
-    padding: 0 1em 0 1em;
+  padding: 0 16px;
+  word-wrap: break-word;
+  width: 432px;
 }
-
-/* Vertical Align Hack */
 .tweet span {
-    vertical-align: middle;
-    display: table-cell;
+  vertical-align: middle;
+  display: table-cell;
 }
-
 .tweet .username {
-    margin-right: 1em;
-    float: right;
-    line-height: 33px;
+  margin-right: 1em;
+  float: right;
+  line-height: 33px;
 }
-
 .tweet .date {
-    padding: 0em 0em 0em 1ex;
-    margin: 0em 0em 0em 0em;
-    font-size: 14px;
+  padding-left: 1ex;
+  margin: 0px 0px;
+  font-size: 14px;
 }
-
 .tweet .icon {
-    height: 15px;
-    width: 15px;
-    margin: 0px 2px 0px 2px;
+  height: 15px;
+  width: 15px;
+  margin: 0px 2px;
 }
-
-.iconbar {
-    text-align: right;
-    opacity: 0;
-    color: #60C7B8;
+.tweet .iconbar {
+  text-align: right;
+  opacity: 0;
+  color: #60c7b8;
 }
-
-.iconbar i {
-    margin: 0px 5px 0px 5px;
-}
-
-.tweet:hover header {
-    background-color: #EEEEEE;
-    opacity: 1;
+.tweet .iconbar i {
+  margin: 0px 5px;
 }
 
 .tweet:hover {
-    border-color: #656565;
+  border-color: #656565;
+}
+.tweet:hover .displaypic {
+  opacity: 1;
+}
+.tweet:hover header {
+  background-color: #EEEEEE;
+  opacity: 1;
+}
+.tweet:hover .iconbar {
+  opacity: 1;
 }
 
-.tweet:hover .iconbar {
-    opacity: 1;
-}
+/*# sourceMappingURL=tweet.css.map */
