@@ -4,7 +4,7 @@ $errorred: #CC0000;
 
 .new-tweet {
     background-color: $offwhite;
-    padding: 1em 1em 1em 1em;
+    padding: 1em;
     margin: 0em 2em 1em 2em;
     border-radius: 10px;
     border-width: 2px;
@@ -35,5 +35,11 @@ $errorred: #CC0000;
         font-size: 75%;
         color: $errorred;
         display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .new-tweet {
+        margin: 0 18px 1em 6px;
     }
 }

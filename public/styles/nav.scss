@@ -18,7 +18,7 @@
         float: left;
         font-size: 200%;
         line-height: 80px;
-        padding: 0px 0px 0px 10px;
+        padding-left: 10px;
     }
 
     .compose {
@@ -36,11 +36,51 @@
     }
 
     .compose i {
-        margin: 2px;
+        display: inline-block;
+        float: left;
     }
 
     .compose:hover {
         color: #000000;
         background-color: #FFFFFF;
+    }
+
+    .compose .text {
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #nav-bar {
+        padding: 0em 3vw;
+
+        .logo {
+            height: 80px;
+            width: 80px;
+            float: left;
+        }
+
+        .compose {
+            float: right;
+            height: 46px;
+            width: 46px;
+            margin: 17px 0;
+        }
+
+        .compose i {
+            margin: 4px 9px 7px 6px;
+        }
+
+        .compose .text {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #nav-bar .header {
+        display: none;
     }
 }

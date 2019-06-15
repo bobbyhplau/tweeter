@@ -16,7 +16,7 @@
   float: left;
   font-size: 200%;
   line-height: 80px;
-  padding: 0px 0px 0px 10px;
+  padding-left: 10px;
 }
 #nav-bar .compose {
   float: right;
@@ -32,11 +32,44 @@
   background-color: #E7FDFF;
 }
 #nav-bar .compose i {
-  margin: 2px;
+  display: inline-block;
+  float: left;
 }
 #nav-bar .compose:hover {
   color: #000000;
   background-color: #FFFFFF;
+}
+#nav-bar .compose .text {
+  display: inline-block;
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  #nav-bar {
+    padding: 0em 3vw;
+  }
+  #nav-bar .logo {
+    height: 80px;
+    width: 80px;
+    float: left;
+  }
+  #nav-bar .compose {
+    float: right;
+    height: 46px;
+    width: 46px;
+    margin: 17px 0;
+  }
+  #nav-bar .compose i {
+    margin: 4px 9px 7px 6px;
+  }
+  #nav-bar .compose .text {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #nav-bar .header {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=nav.css.map */

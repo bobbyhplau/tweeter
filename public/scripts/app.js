@@ -48,7 +48,7 @@ $(document).ready(function() {
         let $date = $("<p>").addClass("date").text(date);
         let $flag = $('<i>').addClass('fas fa-flag');
         let $retweet = $('<i>').addClass('fas fa-retweet');
-        let $heart = $('<i>').addClass('fas fa-heart');
+        let $heart = $('<i>').addClass('fas fa-heart').attr("data-id", tweetObj._id).attr("data-liked", tweetObj.liked.toString());
         let $iconbar = $('<span>').addClass('iconbar').append($flag).append($retweet).append($heart);
         let $footer = $("<footer>").append($date).append($iconbar);
 

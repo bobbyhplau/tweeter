@@ -73,15 +73,24 @@ $lightred: #FA7985;
 
     .iconbar {
         text-align: right;
-        opacity: 0;
+        opacity: 1;
         color: $teal;
 
         i {
             margin: 0px 5px;
         }
 
-        i:hover {
+        i[data-liked="0"] {
+            color: $teal;
+        }
+
+        i[data-liked="1"] {
             color: $lightred;
+        }
+
+        i:hover {
+            font-size: 18px;
+            margin: 0px 4px;
         }
     }
 }
@@ -100,5 +109,27 @@ $lightred: #FA7985;
 
     .iconbar {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .tweet {
+        margin: 16px 18px 16px 6px;
+
+        h2 {
+            float: none;
+            margin: 9px 0 0 0;
+        }
+
+        .message {
+            width: 91vw;
+        }
+
+        .username {
+            margin-right: 1em;
+            float: none;
+            line-height: 16px;
+            margin: 0;
+        }
     }
 }

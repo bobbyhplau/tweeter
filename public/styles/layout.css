@@ -31,6 +31,16 @@ main {
     margin: auto;
 }
 
+@media only screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

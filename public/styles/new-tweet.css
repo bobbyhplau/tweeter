@@ -1,6 +1,6 @@
 .new-tweet {
   background-color: #EEEEEE;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   margin: 0em 2em 1em 2em;
   border-radius: 10px;
   border-width: 2px;
@@ -28,6 +28,12 @@
   font-size: 75%;
   color: #CC0000;
   display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .new-tweet {
+    margin: 0 18px 1em 6px;
+  }
 }
 
 /*# sourceMappingURL=new-tweet.css.map */
