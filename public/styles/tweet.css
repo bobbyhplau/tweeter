@@ -56,7 +56,7 @@
 }
 .tweet .iconbar {
   text-align: right;
-  opacity: 1;
+  opacity: 0;
   color: #60c7b8;
 }
 .tweet .iconbar i {
