@@ -94,6 +94,7 @@ $(document).ready(function() {
                 .then(function() {
                     textarea.val('');
                     $('.counter').text(140);
+                    $('#tweets-container').empty();
                     loadTweets();
                 });
             error.slideUp('fast');

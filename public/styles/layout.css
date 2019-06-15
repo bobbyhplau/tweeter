@@ -22,6 +22,7 @@ body {
     margin: 0;
     color: #244751;
     background-color: #eee;
+    overflow: scroll;
 }
 
 main {
